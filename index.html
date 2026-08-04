@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+if (sessionStorage.getItem('skipSmoothScroll')) {
+  sessionStorage.removeItem('skipSmoothScroll');
+  document.documentElement.style.scrollBehavior = 'auto';
+  window.addEventListener('load', () => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  }, { once: true });
+}
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jasper Owen — ML Engineer</title>
