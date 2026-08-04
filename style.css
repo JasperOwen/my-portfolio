@@ -261,3 +261,58 @@
     outline-offset: 2px;
   }
 
+
+/* Contact form */
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.contact-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+}
+
+.contact-card textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+  outline: none;
+  border-color: var(--signal);
+}
+
+.success-message {
+  color: var(--signal);
+  font-size: 14px;
+}
+
+.error-message,
+[data-fs-error] {
+  color: #b42318;
+  font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  .contact-row {
+    grid-template-columns: 1fr;
+  }
+}
