@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasper Owen - About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="wrap">
+            <div class="brand">
+                <div class="mark"><span>JO</span></div>
+                <div class="brand-name">jasper<span>.</span>owen</div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">← back</a>
+                <a href="index.html#about">about me</a>
+                <a href="index.html#portfolio">ml portfolio</a>
+                <a href="index.html#contact">contact me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="wrap">
+        <!-- Section Header: Centered 'About me' Title -->
+        <section id="about" style="border-top: none; padding-top: 48px; text-align: center;">
+            <div class="section-head" style="margin-bottom: 32px;">
+                <h2>About me</h2>
+            </div>
+
+            <!-- Two-Column Block: Text on Left, Profile Image on Right -->
+            <div class="about-grid">
+                <div class="card" style="text-align: left;">
+                    <h3>ML Intern @ Flyrank & CS Student</h3>
+                    <p>
+                        I am a University student and Machine Learning Intern at Flyrank. My primary focus lies in building data-driven systems, practical predictive models, and scalable software pipelines.
+                    </p>
+                    <p style="margin-top: 12px;">
+                        Currently working on fine-tuning algorithms and continuous feature engineering tools to transform complex data into actionable insights.
+                    </p>
+                    <a href="cv.html" class="card-link">View full CV →</a>
+                </div>
+
+                <div class="card" style="display: flex; justify-content: center; align-items: center; padding: 0; overflow: hidden;">
+                    <!-- Replace avatar.png with the path to your actual headshot/profile picture -->
+                    <img src="avatar.png" alt="Jasper Owen" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Full-Width Text Block -->
+        <section class="section">
+            <div class="card">
+                <h3>Background & Technical Focus</h3>
+                <p>
+                    Leveraging a strong foundation in Applied Computer Science and Statistics, I bridge the gap between theoretical machine learning models and engineering execution. Passionate about natural language processing, vision architectures, deep learning model evaluation, and computational efficiency.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="wrap">
+        <div>© Jasper Owen</div>
+        <div>Machine Learning Intern @ Flyrank</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => sessionStorage.setItem('skipSmoothScroll', '1'));
+    });
+    </script>
+</body>
+</html>
