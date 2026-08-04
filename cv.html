@@ -31,5 +31,12 @@
         </iframe>
         <br><br>
     </main>
+
+<script>
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => sessionStorage.setItem('skipSmoothScroll', '1'));
+});
+</script>
+
 </body>
 </html>
