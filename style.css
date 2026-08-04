@@ -189,25 +189,11 @@
 
   .card .card-link:hover { color: var(--signal); border-color: var(--signal); }
 
-  .portfolio-empty {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 32px 28px;
-    text-align: left;
-  }
-
-  .portfolio-empty p { font-size: 15px; }
-
-  .portfolio-empty .card-link {
-    display: inline-block;
-    margin-top: 14px;
-    font-size: 14px;
-    border-bottom: 1px solid var(--ink);
-    padding-bottom: 2px;
-  }
-
-  .portfolio-empty .card-link:hover { color: var(--signal); border-color: var(--signal); }
+  .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
 
   .contact-row {
     display: flex;
