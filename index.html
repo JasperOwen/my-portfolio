@@ -103,57 +103,60 @@ if (sessionStorage.getItem('skipSmoothScroll')) {
       <div class="value">Connect with me on LinkedIn</div>
     </a>
 
-    <div class="contact-card">
-      <h3>Send me a message</h3>
-
-      <div data-fs-success class="success-message"></div>
-      <div data-fs-error class="error-message"></div>
-
-      <form id="contact-form">
-
-        <input
-          type="text"
-          name="name"
-          placeholder="your name"
-          data-fs-field
-          required>
-
-        <input
-          type="email"
-          name="email"
-          placeholder="your email"
-          data-fs-field
-          required>
-
-        <span data-fs-error="email"></span>
-
-        <textarea
-          name="message"
-          placeholder="your message"
-          data-fs-field
-          required></textarea>
-
-        <span data-fs-error="message"></span>
-
-        <button
-          class="btn btn-primary"
-          type="submit"
-          data-fs-submit-btn>
-          send message
-        </button>
-
-      </form>
-    </div>
-
     <a class="contact-card"
-      href="https://calendly.com/jasper-owen31/15-minute-meeting"
-      target="_blank"
-      rel="noopener noreferrer">
+       href="https://calendly.com/jasper-owen31/15-minute-meeting"
+       target="_blank"
+       rel="noopener noreferrer">
       <h3>Schedule a chat</h3>
       <div class="value">Book a 15-minute conversation</div>
     </a>
 
   </div>
+
+  <div class="message-card contact-card">
+
+    <h3>Send me a message</h3>
+
+    <div data-fs-success class="success-message"></div>
+    <div data-fs-error class="error-message"></div>
+
+    <form id="contact-form">
+
+      <input
+        type="text"
+        name="name"
+        placeholder="your name"
+        data-fs-field
+        required>
+
+      <input
+        type="email"
+        name="email"
+        placeholder="your email"
+        data-fs-field
+        required>
+
+      <span data-fs-error="email"></span>
+
+      <textarea
+        name="message"
+        placeholder="your message"
+        data-fs-field
+        required></textarea>
+
+      <span data-fs-error="message"></span>
+
+      <button
+        class="btn btn-primary"
+        type="submit"
+        data-fs-submit-btn>
+        send message
+      </button>
+
+    </form>
+
+  </div>
+
 </section>
 
 </main>
