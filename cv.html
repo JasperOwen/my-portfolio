@@ -17,22 +17,28 @@
                 <div class="brand-name">jasper<span>.</span>owen</div>
             </div>
             <div class="nav-links">
-                <a href="javascript:history.back()">← back</a>
-                <a href="index.html#about">about me</a>
-                <a href="index.html#portfolio">ml portfolio</a>
-                <a href="index.html#contact">contact me</a>
+                <a href="index.html">← back</a>
+                <a href="index.html#about">about</a>
+                <a href="index.html#portfolio">portfolio</a>
+                <a href="index.html#contact">contact</a>
             </div>
         </nav>
     </header>
-    <main class="wrap">
-        <iframe 
-            src="cv.pdf"
-            width="100%"
-            height="800px">
-        </iframe>
-        <br><br>
-    </main>
+<main class="wrap">
+        <div style="margin: 28px 0 18px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a class="btn btn-primary" href="cv.pdf" target="_blank" rel="noopener noreferrer">
+                📄 Open / Download Full CV (PDF)
+            </a>
+        </div>
 
+        <div class="cv-container">
+            <iframe 
+                src="cv.pdf"
+                title="Jasper Owen Curriculum Vitae">
+            </iframe>
+        </div>
+        <br>
+</main>
 <script>
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => sessionStorage.setItem('skipSmoothScroll', '1'));
