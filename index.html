@@ -26,9 +26,9 @@ if (sessionStorage.getItem('skipSmoothScroll')) {
       <div class="brand-name">jasper<span>.</span>owen</div>
     </div>
     <div class="nav-links">
-      <a href="#about">About me</a>
-      <a href="#portfolio">ML portfolio</a>
-      <a href="#contact">Contact me</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 </header>
@@ -62,102 +62,102 @@ if (sessionStorage.getItem('skipSmoothScroll')) {
     </div>
   </section>
 
-<section id="portfolio">
-  <div class="section-head">
-    <h2>My portfolio</h2>
-  </div>
+  <section id="portfolio">
+    <div class="section-head">
+      <h2>My portfolio</h2>
+    </div>
 
-  <div class="portfolio-grid">
+    <div class="portfolio-grid">
+      <div class="card">
+        <h3>FlyRank ML internship</h3>
+        <p>
+          My work through the FlyRank AI Machine Learning internship
+          — a runnable ML pipeline on real anonymized Google Search data.
+        </p>
+        <a
+          class="card-link"
+          href="https://github.com/JasperOwen/flyrank-ml-internship.git"
+          target="_blank"
+          rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </div>
+    </div>
 
-    <div class="card">
-      <h3>FlyRank ML internship</h3>
-      <p>
-        My work throught the Fllyrank AI Machine Learning internship
-        - a runnable ML pipeline on real anonymized Google Search data.
-      </p>
-      <a
-        class="card-link"
-        href="https://github.com/JasperOwen/flyrank-ml-internship.git"
-        target="_blank"
-        rel="noopener noreferrer">
-        View on GitHub →
+    <p class="portfolio-footer">Future work coming soon</p> 
+  </section>
+
+  <section id="contact">
+    <div class="section-head">
+      <h2>Contact me</h2>
+    </div>
+
+    <div class="contact-row">
+      <a class="contact-card"
+         href="https://www.linkedin.com/in/jasper-owen-230044415"
+         target="_blank"
+         rel="noreferrer">
+        <h3>LinkedIn</h3>
+        <div class="value">Connect with me on LinkedIn</div>
+      </a>
+
+      <a class="contact-card"
+         href="https://calendly.com/jasper-owen31/15-minute-meeting"
+         target="_blank"
+         rel="noopener noreferrer">
+        <h3>Schedule a chat</h3>
+        <div class="value">Book a 15-minute conversation</div>
       </a>
     </div>
 
-  </div>
+    <div class="message-card contact-card">
+      <h3>Send me a message</h3>
 
-  <p class="portfolio-footer">Future work coming soon</p> 
-</section>
-<section id="contact">
-  <div class="section-head">
-    <h2>Contact me</h2>
-  </div>
+      <div data-fs-success class="success-message" role="status" aria-live="polite"></div>
+      <div data-fs-error class="error-message" role="alert" aria-live="polite"></div>
 
-  <div class="contact-row">
+      <form id="contact-form" action="https://formspree.io/f/mljrrjon" method="POST">
+        <label for="name" class="sr-only">Your Name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="your name"
+          data-fs-field
+          autocomplete="name"
+          required>
 
-    <a class="contact-card"
-       href="https://www.linkedin.com/in/jasper-owen-230044415"
-       target="_blank"
-       rel="noreferrer">
-      <h3>LinkedIn</h3>
-      <div class="value">Connect with me on LinkedIn</div>
-    </a>
+        <label for="email" class="sr-only">Your Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="your email"
+          data-fs-field
+          autocomplete="email"
+          required>
+        <span data-fs-error="email" role="alert"></span>
 
-    <a class="contact-card"
-       href="https://calendly.com/jasper-owen31/15-minute-meeting"
-       target="_blank"
-       rel="noopener noreferrer">
-      <h3>Schedule a chat</h3>
-      <div class="value">Book a 15-minute conversation</div>
-    </a>
+        <input type="text" name="_gotcha" style="display:none">
 
-  </div>
+        <label for="message" class="sr-only">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="your message"
+          data-fs-field
+          required></textarea>
+        <span data-fs-error="message" role="alert"></span>
 
-  <div class="message-card contact-card">
-
-    <h3>Send me a message</h3>
-
-    <div data-fs-success class="success-message"></div>
-    <div data-fs-error class="error-message"></div>
-
-    <form id="contact-form">
-
-      <input
-        type="text"
-        name="name"
-        placeholder="your name"
-        data-fs-field
-        required>
-
-      <input
-        type="email"
-        name="email"
-        placeholder="your email"
-        data-fs-field
-        required>
-
-      <span data-fs-error="email"></span>
-
-      <textarea
-        name="message"
-        placeholder="your message"
-        data-fs-field
-        required></textarea>
-
-      <span data-fs-error="message"></span>
-
-      <button
-        class="btn btn-primary"
-        type="submit"
-        data-fs-submit-btn>
-        send message
-      </button>
-
-    </form>
-
-  </div>
-
-</section>
+        <button
+          class="btn btn-primary"
+          type="submit"
+          data-fs-submit-btn>
+          send message
+        </button>
+      </form>
+    </div>
+  </section>
 
 </main>
 
@@ -165,8 +165,8 @@ if (sessionStorage.getItem('skipSmoothScroll')) {
   <span>© 2026 Jasper Owen</span>
 </footer>
 
-<script src="script.js"></script>
 <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+<script src="script.js"></script>
 
 </body>
 </html>
