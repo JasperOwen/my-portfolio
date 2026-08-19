@@ -360,6 +360,7 @@ footer {
 
   .cv-container {
     height: 480px;
+    display: none;
   }
 
   footer {
