@@ -143,6 +143,14 @@ h1 {
   color: #555;
 }
 
+.hero p.hero-description {
+  margin-top: 24px;
+  font-size: 15px;
+  color: #555;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
 .hero-actions {
   margin-top: 24px;
   display: flex;
