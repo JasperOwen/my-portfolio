@@ -197,6 +197,7 @@ section {
 .card h3 {
   font-size: 14px;
   color: var(--signal);
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -243,6 +244,7 @@ section {
 
 .contact-card h3 {
   font-size: 13px;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 
