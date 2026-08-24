@@ -385,6 +385,13 @@ footer {
   }
 }
 
+/* Hides CV preview on mobile devices */
+@media (max-width: 1024px) {
+  .cv-container {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
