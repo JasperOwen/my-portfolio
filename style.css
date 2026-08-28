@@ -435,6 +435,32 @@ a:focus-visible, .btn:focus-visible {
   border: none;
 }
 
+.paper-acknowledgment {
+  margin-top: 24px;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.paper-acknowledgment h3 {
+  font-size: 14px;
+  color: var(--signal);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.paper-acknowledgment p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.paper-acknowledgment a {
+  color: var(--signal);
+  text-decoration: underline;
+}
+
 @media (max-width: 640px) {
   .paper-actions .btn {
     width: 100%;
